@@ -81,6 +81,7 @@ ol {
   justify-content: space-between;
   align-items: end;
   width: 100%;
+  margin-block-end: 2px; /** выравнивание с кнопкой "Показать ещё" **/
 }
 
 .search-form__fieldset {
@@ -145,14 +146,14 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__label:has(.search-form__textfield):hover {
-  text-decoration: none;
-}
-
-/** убираем подчёркивание для тектового поля **/
 .search-form__label:has(:focus-visible) {
   outline: solid 1px #fff;
   outline-offset: 1px;
+}
+
+/** убираем подчёркивание для тектового поля при наведении **/
+.search-form__label:has(.search-form__textfield):hover {
+  text-decoration: none;
 }
 
 /** для firefox **/
@@ -212,9 +213,9 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  width: 395px;
   height: 34px;
-  margin-block-start: 30px;
+  margin: 30px 2px 2px 2px; /** позиционируем кнопку, чтобы обводка не выходила за пределы блока **/
 }
 
 .title {
@@ -262,6 +263,7 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
