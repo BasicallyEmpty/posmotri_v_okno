@@ -264,7 +264,7 @@ ol {
   position: relative;
   height: 298px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list-item:not(:first-of-type) {
